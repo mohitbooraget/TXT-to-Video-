@@ -27,15 +27,15 @@ DEF_FORMAT = "480"
 from dotenv import load_dotenv
 load_dotenv()
 os.makedirs("./downloads", exist_ok=True)
-API_ID = 
-API_HASH = ""
-BOT_TOKEN = ""
-AUTH_USERS = 
-sudo_users = []
+API_ID = 24147139
+API_HASH = "17f525f59de52108805a65f5ffd909e4"
+BOT_TOKEN = "7183264994:AAHsyIVtu5LedEFkMrJGn8hRYu_3ZQUKbfQ"
+AUTH_USERS = 5186250641,6594402123,5331045824,5935537622,5724356290,6436809802
+sudo_users = [auth_users]
 bot = Client(
     "bot",
     bot_token=BOT_TOKEN,
-    api_id=API_ID,
+    api_id=API_ID, 
     api_hash=API_HASH
 )
 async def exec(cmd):
